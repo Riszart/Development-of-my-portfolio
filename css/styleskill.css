@@ -1,0 +1,111 @@
+main{
+    width: 100%;
+}
+.contentMain{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.title-content{
+    font-size: 32px;
+    padding-top: 50px;
+    color: var(--color-letter);
+}
+.p-content{
+    font-size: 24px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contain-main{
+    height: 345px;
+    width: 1000px;
+    background-color: var(--color-back-content);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 15px var(--color-shadow);
+}
+.contain-main:hover{
+    background-color: var(--color-blue-tras);
+}
+.contain-main__iten{
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px var(--color-shadow);
+    border: solid 2px var( --color-black);
+}
+.contain-main__iten:hover{
+    height: 205px;
+    width: 205px;
+}
+.iten__img{
+    border-bottom: solid 2px var(--color-black);
+}
+.iten__img img{
+    padding-top: 5px;
+    display: block;
+    height: 75%;
+    width: 75%;
+    margin: 0 auto;
+}
+.iten__p{
+    text-align: center;
+    padding-top: 2%;
+    font-size: 24px;
+    font-weight: bold;
+}
+footer{
+    position: relative;
+    height: 250px;
+    width: 100%;
+    background-color: var(--footer-color);
+}
+footer div img{
+    width: 70px;
+    height: 70px;
+}
+footer div:nth-child(2), footer div:nth-child(3) div{
+    display: flex;
+    padding-top: 30px;
+    padding-left: 21px;
+    padding-right: 10px;
+}
+footer div:nth-child(2) p{
+    font-size: 16px;
+    font-weight: bold;
+    align-self: center;
+    padding-left: 5px;
+}
+footer div:nth-child(3){
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+footer div:nth-child(3) div p{
+    font-size: 24px;
+    font-weight: bold;
+    align-self: center;
+    padding-left: 5px;
+}
+.footer-deco{
+    position: absolute;
+    top: -10px;
+    background-color: var(--color-letter);
+    height: 23px;
+    width: 100%;
+}
+.socialNetworks-p{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    right: 280px;
+    color: var(--color-letter);
+}

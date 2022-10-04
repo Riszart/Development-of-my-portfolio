@@ -1,8 +1,10 @@
 :root{
+    --color-shadow: rgba(0,0,0,0.5);
     --color-black: #000000;
     --color-blue-tras: rgba(37,105,159,0.5);
     --color-letter: #00EBFD;
-
+    --color-back-content: rgba(69,155,203,0.5);
+    --footer-color: #192E37;
 }
 *{
     margin: 0;
@@ -23,6 +25,7 @@ header{
     justify-content: center;
     align-items: center;
     background-color: var(--color-blue-tras);
+    box-shadow: 0 0 5px var(--color-black);
 }
 nav{
     height: 70px;
@@ -33,14 +36,24 @@ nav{
 li:nth-child(1){
     border-left: solid var(--color-black) 5px;
 }
+li:nth-child(5){
+    border-right: solid var(--color-black) 5px;
+}
 li{
     width: 150px;
     height: 70px;
     list-style: none;
     text-align: center;
-    border-right: solid var(--color-black) 5px;
+    border-right: solid var(--color-black) 3px;
+    border-left: solid var(--color-black) 3px;
+    border-radius: 10px;
+}
+.nav-a:hover{
+    border-bottom: solid #000000 5px;
+    border-radius: 10px;
 }
 .nav-a{
+
     font-size: 20px;
     font-weight: 400;
     display: block;
@@ -93,7 +106,20 @@ h2{
     gap: 15px;
     border-bottom-left-radius: 25px;
 }
+.socialNetworks:hover{
+    height: 85px;
+    width: 280px;
+}
 .socialNetworks img{
     height: 50px;
     width: 50px;
+}
+.socialNetworks img:hover{
+    width: 52px;
+    height: 52px;
+}
+.socialNetworks-p{
+    position: absolute;
+    right: 280px;
+    top: 30px;
 }
