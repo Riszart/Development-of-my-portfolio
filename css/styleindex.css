@@ -60,6 +60,32 @@ li{
     margin-top: 25px;
     color: var(--color-letter);
 }
+.content-float__skill{
+    position: relative;
+    top: 30px;
+    height: 200px;
+    width: 300px;
+    background-color: var(--color-back-content);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.content-float__up, .content-float__down{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 30px;
+}
+.content-float__skill div p{
+    color: var(--color-letter);
+    font-size: 24px;
+    border-bottom: solid 5px var(--color-black);
+    border-left: solid 5px var(--color-black);
+    border-bottom-left-radius: 10px;
+    text-align: start;
+    padding-left: 5px;
+}
 .imgMain{
     height: 50vh;
     width: 100%;
