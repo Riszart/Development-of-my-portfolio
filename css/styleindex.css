@@ -19,7 +19,7 @@ body{
 }
 header{
     position: absolute;
-    height: 100px;
+    height: 70px;
     width: 100%;
     display:flex;
     justify-content: center;
@@ -27,13 +27,16 @@ header{
     background-color: var(--color-blue-tras);
     box-shadow: 0 0 5px var(--color-black);
 }
+header:hover{
+    height: 100px;
+}
 nav{
     height: 70px;
 }
 .content-ul{
     display: flex;
 }
-li:nth-child(1){
+.content-ul > li:nth-child(1){
     border-left: solid var(--color-black) 5px;
 }
 li:nth-child(5){
@@ -46,46 +49,50 @@ li{
     text-align: center;
     border-right: solid var(--color-black) 3px;
     border-left: solid var(--color-black) 3px;
-    border-radius: 10px;
 }
 .nav-a:hover{
     border-bottom: solid #000000 5px;
     border-radius: 10px;
 }
 .nav-a{
-
     font-size: 20px;
     font-weight: 400;
     display: block;
     margin-top: 25px;
     color: var(--color-letter);
 }
+.sub-nav__content:hover .content-float__skill{
+    visibility: visible;
+}
 .content-float__skill{
-    position: relative;
-    top: 30px;
-    height: 200px;
-    width: 300px;
+    border: none;
+    visibility: hidden;
+    position: absolute;
+    top: 85px;
+    height: 150px;
+    width: 160px;
     background-color: var(--color-back-content);
     display: grid;
     grid-template-rows: 1fr 1fr;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
 }
-.content-float__up, .content-float__down{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding-left: 30px;
-}
-.content-float__skill div p{
+.content-float__skill li a{
     color: var(--color-letter);
-    font-size: 24px;
+    font-size: 15px;
     border-bottom: solid 5px var(--color-black);
     border-left: solid 5px var(--color-black);
     border-bottom-left-radius: 10px;
     text-align: start;
     padding-left: 5px;
 }
+.content-float__up, .content-float__down{
+    border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 5px;
+}
+
 .imgMain{
     height: 50vh;
     width: 100%;
